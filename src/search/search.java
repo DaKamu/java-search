@@ -16,13 +16,13 @@ public class search {
 		//Create hash table
 		Hashtable<Integer,String> hashTable = new Hashtable<Integer,String>();
 		//HashMap<char,String> hashMap = new HashMap<char,String>();
-		String file = "C:\\Users\\mdunk\\Documents\\Projects N' Progs\\git\\java-search\\java-search\\src\\search\\wordlist.txt";
+		String file = "wordlist.txt";
 		
 		
 			//Unsorted arraylist
 			readFtList(file, wsList);
 			///This file contains all elements for concordance list.
-			file = "C:\\Users\\mdunk\\Documents\\Projects N' Progs\\git\\java-search\\java-search\\src\\search\\conList.txt";
+			file = "conList.txt";
 			readFtList(file,cList);
 			System.out.println("Linear search - First 10 and last 10 elements");
 			System.out.println("There are " + cList.size() + " unique words in the concordance");
@@ -38,7 +38,7 @@ public class search {
 			
 			
 			//This file has the same list as linear search, but it in sorted order. 
-			file = "C:\\Users\\mdunk\\Documents\\Projects N' Progs\\git\\java-search\\java-search\\src\\search\\sortedList.txt";
+			file = "sortedList.txt";
 			readFtList(file,wsList);
 			System.out.println("Binary search - First 10 and last 10 elements");
 			System.out.println("There are " + cList.size() + " unique words in the concordance");
